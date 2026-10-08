@@ -17,4 +17,11 @@ return {
         max_devices = 1,
         SLOT = "2"
     },
+    ["AETH-JHMO-T3N3-U46D"] = {
+        type = "SKIN",
+        expiry = "2026-10-09",
+        valid = true,
+        max_devices = 1,
+        SLOT = "3"
+    },
 }
