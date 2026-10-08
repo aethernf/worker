@@ -10,4 +10,11 @@ return {
         max_devices = 20,
         SLOT = "1"
     },
+    ["AETH-7RCJ-XJDA-0LAT"] = {
+        type = "VIP",
+        expiry = "2026-10-09",
+        valid = true,
+        max_devices = 1,
+        SLOT = "2"
+    },
 }
