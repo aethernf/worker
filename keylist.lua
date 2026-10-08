@@ -12,8 +12,8 @@ return {
     },
     ["AETH-7RCJ-XJDA-0LAT"] = {
         type = "VIP",
-        expiry = "2026-10-09",
-        valid = false,
+        expiry = "2026-10-08",
+        valid = true,
         max_devices = 1,
         SLOT = "2"
     },
