@@ -4,7 +4,7 @@
 
 return {
     ["NAZWADENDI"] = {
-        type = "VIP",
+        type = "VVIP",
         expiry = "2027-12-31",
         valid = true,
         max_devices = 20,
