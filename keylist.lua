@@ -18,7 +18,7 @@ return {
         SLOT = "2"
     },
     ["AETH-KZR0-KT2U-W9SN"] = {
-        type = "VIP",
+        type = "SKIN",
         expiry = 1823063406,
         valid = true,
         max_devices = 1,
