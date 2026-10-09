@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AETHERNF — Cheat PUBG Mobile Premium</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#00BFFF;--dark:#0a0e1a;--darker:#060913;--white:#fff;--gray:#9aa4b2}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--darker);color:var(--white);line-height:1.6;overflow-x:hidden}
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;position:relative;z-index:1;background:radial-gradient(ellipse at 50% 0%,#0e1a33 0%,transparent 70%)}
+.badge{display:inline-block;padding:.4rem 1.2rem;border:1px solid var(--blue);border-radius:50px;color:var(--blue);font-size:.85rem;letter-spacing:2px;margin-bottom:1.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 10px rgba(0,191,255,.3)}50%{box-shadow:0 0 25px rgba(0,191,255,.6)}}
+h1{font-size:clamp(2.5rem,8vw,5rem);font-weight:900;letter-spacing:3px;background:linear-gradient(135deg,#fff 30%,var(--blue) 70%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem;animation:fadeUp 1s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.tagline{color:var(--gray);font-size:1.2rem;margin-bottom:2rem;max-width:600px;animation:fadeUp 1s .2s ease both}
+.cta{display:inline-block;padding:1rem 3rem;background:linear-gradient(135deg,var(--blue),#0080ff);color:#fff;text-decoration:none;border-radius:12px;font-weight:700;font-size:1.1rem;box-shadow:0 0 30px rgba(0,191,255,.4);transition:.3s;animation:fadeUp 1s .4s ease both}
+.cta:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 0 50px rgba(0,191,255,.7)}
+.stats{display:flex;gap:3rem;margin-top:3rem;animation:fadeUp 1s .6s ease both}
+.stat{text-align:center}.stat .num{font-size:2rem;font-weight:900;color:var(--blue)}.stat .lbl{color:var(--gray);font-size:.9rem}
+section{padding:4rem 2rem;max-width:1100px;margin:0 auto;position:relative;z-index:1}
+h2{text-align:center;font-size:2rem;margin-bottom:.5rem}
+.sub{text-align:center;color:var(--gray);margin-bottom:3rem}
+.tabs{display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+.tab{padding:.7rem 1.8rem;border:1px solid #1a2333;border-radius:50px;cursor:pointer;color:var(--gray);transition:.3s;background:var(--dark)}
+.tab.active,.tab:hover{border-color:var(--blue);color:var(--blue)}
+.tab-content{display:none;animation:fadeUp .5s ease}
+.tab-content.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.card{background:var(--dark);border:1px solid #1a2333;border-radius:16px;padding:1.8rem;transition:.3s;cursor:default}
+.card:hover{border-color:var(--blue);transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,191,255,.15)}
+.card .icon{font-size:2rem;margin-bottom:1rem}
+.card h3{margin-bottom:.5rem;color:var(--blue)}
+.card p{color:var(--gray);font-size:.95rem}
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1rem}
+.tier{background:var(--dark);border:1px solid #1a2333;border-radius:16px;padding:2rem;text-align:center;position:relative;transition:.3s}
+.tier:hover{transform:translateY(-5px) scale(1.02)}
+.tier.popular{border-color:var(--blue);box-shadow:0 0 40px rgba(0,191,255,.2)}
+.tier .pop{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;padding:.25rem 1.2rem;border-radius:20px;font-size:.8rem;font-weight:700;animation:pulse 2s infinite}
+.tier h3{font-size:1.5rem;margin-bottom:.5rem}
+.tier .price{font-size:2rem;font-weight:900;color:var(--blue);margin:1rem 0}
+.tier ul{list-style:none;text-align:left;margin:1.5rem 0;color:var(--gray)}
+.tier ul li{padding:.4rem 0}.tier ul li::before{content:"⚡ ";color:var(--blue)}
+.shield{background:linear-gradient(135deg,#0e1a33,#060913);border:1px solid var(--blue);border-radius:20px;padding:3rem;text-align:center;margin:2rem auto;max-width:900px}
+.shield h2{color:var(--blue)}
+.feat-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2rem}
+.feat{background:#0a0e1a;border:1px solid #1a2333;padding:.8rem 1.5rem;border-radius:50px;font-size:.9rem;transition:.3s;cursor:default}
+.feat:hover{border-color:var(--blue);transform:scale(1.05)}
+.faq{max-width:700px;margin:0 auto}
+.faq details{background:var(--dark);border:1px solid #1a2333;border-radius:12px;padding:1.2rem;margin-bottom:1rem;transition:.3s}
+.faq details:hover{border-color:var(--blue)}
+.faq summary{cursor:pointer;font-weight:600;color:var(--blue)}
+.faq p{color:var(--gray);margin-top:.8rem}
+footer{text-align:center;padding:3rem 2rem;color:var(--gray);border-top:1px solid #1a2333;position:relative;z-index:1}
+footer a{color:var(--blue)}
+.float-btn{position:fixed;bottom:2rem;right:2rem;background:linear-gradient(135deg,var(--blue),#0080ff);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 0 20px rgba(0,191,255,.5);z-index:100;transition:.3s}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:1rem}
+.shot{border-radius:16px;overflow:hidden;border:1px solid #1a2333;transition:.3s;aspect-ratio:16/9;background:#0a0e1a;display:flex;align-items:center;justify-content:center}
+.shot:hover{transform:scale(1.03);border-color:var(--blue);box-shadow:0 10px 40px rgba(0,191,255,.2)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot .ph{color:var(--gray);text-align:center;padding:1rem;font-size:.9rem}
+.float-btn:hover{transform:scale(1.1)}
+</style>
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="hero">
+<div class="badge">⚡ PREMIUM PUBG MOBILE CHEAT ⚡</div>
+<h1>AETHERNF</h1>
+<p class="tagline">Cheat PUBG Mobile paling stabil dengan sistem lisensi online, update rutin, dan proteksi anti-ban berlapis.</p>
+<a class="cta" href="https://t.me/aethernf" target="_blank">Order via Telegram</a>
+<div class="stats">
+<div class="stat"><div class="num" data-count="5000">0</div><div class="lbl">Pengguna Aktif</div></div>
+<div class="stat"><div class="num" data-count="99">0</div><div class="lbl">% Uptime</div></div>
+<div class="stat"><div class="num" data-count="24">0</div><div class="lbl">Jam Support</div></div>
+</div>
+</div>
+
+<section>
+<h2>⚡ Fitur Unggulan</h2>
+<p class="sub">Klik kategori untuk eksplor</p>
+<div class="tabs">
+<div class="tab active" onclick="showTab('esp')">🎯 ESP</div>
+<div class="tab" onclick="showTab('aim')">🔫 Aimbot</div>
+<div class="tab" onclick="showTab('extra')">✨ Extra</div>
+</div>
+<div id="tab-esp" class="tab-content active"><div class="grid">
+<div class="card"><div class="icon">🎯</div><h3>ESP 8 Tipe</h3><p>Box, skeleton, HP bar, jarak, nama, radar 360, peringatan musuh membidik, info detail.</p></div>
+<div class="card"><div class="icon">📊</div><h3>AllInOne</h3><p>FPS counter, enemy counter, jarak, HP bar, snaplines — ringan di HP.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Tema Lightning</h3><p>Visual ESP biru elektrik + putih yang keren dan jelas.</p></div>
+</div></div>
+<div id="tab-aim" class="tab-content"><div class="grid">
+<div class="card"><div class="icon">🔫</div><h3>Aimbot Bypass</h3><p>Aimbot v1 + AimTouch v2 dengan FOV, smoothness, dan prediksi gerakan.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Less Recoil</h3><p>Kurangi recoil horizontal & vertikal. Tembakan lebih stabil.</p></div>
+<div class="card"><div class="icon">💀</div><h3>Magic Bullet</h3><p>Damage custom untuk head & body. (VVIP only)</p></div>
+</div></div>
+<div id="tab-extra" class="tab-content"><div class="grid">
+<div class="card"><div class="icon">🙈</div><h3>Tombol HIDE</h3><p>Satu klik sembunyikan semua cheat. Klik lagi untuk kembalikan.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Mod Skin VIP</h3><p>Unlock skin senjata, outfit, emote, kendaraan, parasut.</p></div>
+<div class="card"><div class="icon">🛡️</div><h3>Fake HWID</h3><p>Spoofer HWID cegah ban perangkat.</p></div>
+</div></div>
+</section>
+
+<section>
+<h2>📸 Galeri</h2>
+<p class="sub">Lihat cheat beraksi</p>
+<div class="gallery">
+<div class="shot"><div class="ph">📷<br>Ganti SCREENSHOT1_URL<br>dengan link gambar</div></div>
+<div class="shot"><div class="ph">📷<br>Ganti SCREENSHOT2_URL<br>dengan link gambar</div></div>
+<div class="shot"><div class="ph">📷<br>Ganti SCREENSHOT3_URL<br>dengan link gambar</div></div>
+</div>
+</section>
+<section>
+<h2>💎 Pilih Tier</h2>
+<p class="sub">Sesuaikan dengan kebutuhanmu</p>
+<div class="tiers">
+<div class="tier"><h3>SKIN</h3><div class="price">50K</div><ul><li>Mod Skin VIP</li><li>Unlock Emote</li><li>Kill Message</li><li>Update seumur hidup</li></ul><a class="cta" href="https://t.me/aethernf" target="_blank">Order</a></div>
+<div class="tier popular"><div class="pop">PALING LARIS</div><h3>VIP</h3><div class="price">100K</div><ul><li>Semua fitur SKIN</li><li>ESP Full 8 Tipe</li><li>Aimbot Bypass</li><li>Tombol HIDE</li><li>Prioritas update</li></ul><a class="cta" href="https://t.me/aethernf" target="_blank">Order</a></div>
+<div class="tier"><h3>VVIP</h3><div class="price">200K</div><ul><li>Semua fitur VIP</li><li>Magic Bullet</li><li>Fake HWID</li><li>Akses beta</li><li>Support prioritas</li></ul><a class="cta" href="https://t.me/aethernf" target="_blank">Order</a></div>
+</div>
+</section>
+
+<div class="shield">
+<h2>🛡️ Anti-Ban Berlapis</h2>
+<p style="color:var(--gray);margin-top:1rem">Keamanan prioritas utama</p>
+<div class="feat-row">
+<div class="feat">✅ .pak Mod</div>
+<div class="feat">✅ Fake HWID</div>
+<div class="feat">✅ Tombol HIDE</div>
+<div class="feat">✅ Update Rutin</div>
+<div class="feat">✅ Lisensi Online</div>
+</div>
+</div>
+
+<section>
+<h2>❓ FAQ</h2>
+<div class="faq">
+<details><summary>Apakah aman dari ban?</summary><p>Tidak ada cheat 100% aman. Tapi .pak mod jauh lebih sulit dideteksi. Gunakan sewajarnya + tombol HIDE.</p></details>
+<details><summary>Perlu root?</summary><p>Tidak perlu root. Semua device Android.</p></details>
+<details><summary>Update game?</summary><p>Update maksimal 1x24 jam setelah patch. Gratis.</p></details>
+</div>
+</section>
+
+<footer>
+<p><strong>AETHERNF</strong> — Premium PUBG Mobile Cheat</p>
+<p>Order: <a href="https://t.me/aethernf" target="_blank">@aethernf</a></p>
+<p style="margin-top:1rem;font-size:.85rem">© 2026 Aethernf</p>
+</footer>
+<a class="float-btn" href="https://t.me/aethernf" target="_blank">💬</a>
+<script>
+// Tabs
+function showTab(id){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));event.target.classList.add('active');document.getElementById('tab-'+id).classList.add('active');}
+// Counter animasi
+document.querySelectorAll('.num').forEach(el=>{const t=+el.dataset.count;let c=0;const i=setInterval(()=>{c+=Math.ceil(t/50);if(c>=t){c=t;clearInterval(i)}el.textContent=c.toLocaleString()},30)});
+// Partikel
+const cv=document.getElementById('particles'),ctx=cv.getContext('2d');let W,H,P=[];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<60;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,r:Math.random()*2});
+(function anim(){ctx.clearRect(0,0,W,H);ctx.fillStyle='rgba(0,191,255,.5)';P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.fill()});requestAnimationFrame(anim)})();
+</script>
+</body>
+</html>
