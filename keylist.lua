@@ -31,4 +31,11 @@ return {
         max_devices = 1,
         SLOT = "4"
     },
+    ["AETH-QSOZ-GFOK-16YV"] = {
+        type = "SKIN",
+        expiry = 1791629483,
+        valid = true,
+        max_devices = 4,
+        SLOT = "5"
+    },
 }
