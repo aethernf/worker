@@ -5,37 +5,9 @@
 return {
     ["NAZWADENDI"] = {
         type = "VVIP",
-        expiry = "2027-12-31",
+        expiry = "1823063382",
         valid = true,
         max_devices = 20,
         SLOT = "1"
-    },
-    ["AETH-WE3W-KADD-E7IJ"] = {
-        type = "VIP",
-        expiry = 1823063382,
-        valid = true,
-        max_devices = 1,
-        SLOT = "2"
-    },
-    ["AETH-KZR0-KT2U-W9SN"] = {
-        type = "SKIN",
-        expiry = 1823063406,
-        valid = true,
-        max_devices = 1,
-        SLOT = "3"
-    },
-    ["AETH-D1CM-ETDH-OH6B"] = {
-        type = "VIP",
-        expiry = 1791703343,
-        valid = true,
-        max_devices = 1,
-        SLOT = "4"
-    },
-    ["AETH-QSOZ-GFOK-16YV"] = {
-        type = "SKIN",
-        expiry = 1791629483,
-        valid = true,
-        max_devices = 4,
-        SLOT = "5"
     },
 }
